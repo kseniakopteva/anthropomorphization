@@ -1,0 +1,244 @@
+body {
+    font-size: 16px;
+    height: 100vh;
+    background: #d8e3f2;
+    background: linear-gradient(145deg, rgba(216, 227, 242, 1) 0%, rgba(134, 145, 158, 1) 100%);
+    font-family: monospace;
+    padding-top: 2em;
+    box-sizing: border-box;
+    color: rgb(59, 67, 76);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.block {
+    background-color: rgba(245, 245, 245, 0.8);
+    margin: 0 auto;
+    padding: 1em 2em 2em 2em;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.148);
+}
+
+.block header {
+    padding: 1em 0 1em 0;
+    margin-bottom: 2em;
+    text-align: center;
+    border-bottom: 1px rgba(112, 128, 144, 0.664) solid;
+}
+
+.color-slategray {
+    color: slategray;
+}
+
+.introduction-block .heading {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.question-block .heading,
+.test-result-block .heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+.test-result-block .heading {
+    text-align: center;
+}
+
+.introduction-block p {
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 0.5em 0.75em;
+    background-color: rgba(255, 255, 255, 0.751);
+    border: 1px slategray solid;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    display: block;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 700;
+    color: rgb(59, 67, 76);
+}
+
+.btn-center {
+    margin: auto;
+}
+
+.btn-right {
+    margin-left: auto;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.148);
+}
+
+.btn-start {
+    margin-top: 2em;
+}
+
+.hide {
+    display: none !important;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 2.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.751);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    border-bottom: rgba(112, 128, 144, 0.5) 1px solid;
+    border-right: rgba(112, 128, 144, 0.5) 1px solid;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.option.chosen {
+    background-color: slategray;
+    color: white;
+}
+
+.option:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.option.chosen:hover {
+    background-color: slategray;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 1em;
+
+    margin: 1em auto;
+    margin-bottom: 2em;
+    width: 40%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.progress-bar div {
+    flex: 1;
+}
+
+.progress-bar div.complete, .progress-bar div.complete-last {
+    background-color: slategray;
+}
+
+.progress-bar div.complete-last {
+    border-bottom-right-radius: 10px;
+}
+
+.error-container {
+    color: brown;
+    padding-top: 1em;
+}
+
+.result-message {
+    font-size: large;
+    padding: 1em 0;
+    line-height: 1.5em;
+}
+
+.result-before {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.result-rating {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+}
+
+input,
+ul.submenu {
+    display: none;
+}
+
+ul.submenu {
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 0.5em 1em;
+}
+
+ul.submenu li {
+    padding-bottom: 0.5em;
+}
+
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 5px;
+}
+
+label:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+input:checked~ul.submenu {
+    display: block;
+}
+
+.arrow-down {
+    border: solid slategray;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 700px) {
+
+    .introduction-block,
+    .question-block {
+        margin: 0 auto;
+        min-width: 650px;
+    }
+
+    .option-container {
+        flex-direction: row;
+    }
+
+    .option {
+        width: 20%;
+    }
+}
