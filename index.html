@@ -20,20 +20,21 @@
 
             <button class="btn btn-center btn-start" onclick="start()">Sākt testu</button>
         </main>
-
-        <div id="question-block" class="question-block block hide">
-            <header>
-                <h2 class="heading">
-                    <span class="color-slategray">(<span id="question-number">1/36</span>)</span> <span id="question-text">Novērtējiet datoru pēc dotām pazīmēm:</span>
-                </h2>
-                <div id="question-img"></div>
-                <!-- <img src="" alt="" /> -->
-            </header>
-            <div id="option-container" class="option-container"></div>
-            <div id="error-container" class="error-container"></div>
-            <div id="next-question-btn"><button class="btn btn-right" onclick="next()">Tālāk</button></div>
+        <div>
+            <div id="question-block" class="question-block block hide">
+                <header>
+                    <h2 class="heading">
+                        <span class="color-slategray">(<span id="question-number">1/36</span>)</span> <span id="question-text">Novērtējiet datoru pēc dotām pazīmēm:</span>
+                    </h2>
+                    <div id="question-img"></div>
+                    <!-- <img src="" alt="" /> -->
+                </header>
+                <div id="option-container" class="option-container"></div>
+                <div id="error-container" class="error-container"></div>
+                <div id="next-question-btn"><button class="btn btn-right" onclick="next()">Tālāk</button></div>
+            </div>
+            <div id="progress-bar" class="progress-bar hide"></div>
         </div>
-        <div id="progress-bar" class="progress-bar hide"></div>
         <div id="test-result-block" class="test-result-block block hide">
             <header>
                 <h2 class="heading">Testa rezultāti</h2>
@@ -50,6 +51,11 @@
                 <li>Godspeed skalas rezultāts: <span id="GS-score"></span>/5</li>
                 <li>Kopējais rezultāts: <span id="final-score"></span>/5</li>
             </ul>
+        </div>
+        <div class="bottom">
+            <p class="bold">Skalu avoti:</p>
+            <p><span class="bold">Godspeed:</span> Bartneck C., Kulic´ D., Croft E., Zoghbi S. Measurement instruments for the anthropomorphism, animacy, likeability, per- ceived intelligence, and perceived safety of robots// Int J Soc Robot – 2009. – 71.-81. lpp.</p>
+            <p><span class="bold">IDAQ:</span> Waytz A., Morewedge C. K., Epley N., Monteleone G., Gao J. H., Cacioppo J. T. Making sense by making sentient: effectance motivation increases anthropomorphism// J Person Soc Psychol – 2010. – 410.-435. lpp.</p>
         </div>
 
         <script type="text/javascript" src="questions.js"></script>

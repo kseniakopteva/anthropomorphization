@@ -9,6 +9,11 @@ body {
     color: rgb(59, 67, 76);
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .block {
@@ -224,6 +229,25 @@ input:checked~ul.submenu {
     padding: 4px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.bottom {
+    margin-bottom: 1em;
+}
+
+.bottom p {
+    font-size: medium;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: auto;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.bold {
+    font-weight: bolder;
+    color: rgb(43, 49, 55);
+    font-style: normal;
 }
 
 @media only screen and (min-width: 700px) {
