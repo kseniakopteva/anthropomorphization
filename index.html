@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Antropomorfizācija</title>
+        <title>Antropomorfizācijas mērīšanas rīks</title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="main.css" />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     </head>
     <body>
         <main id="introduction-block" class="introduction-block block">
@@ -45,17 +46,36 @@
             <br />
 
             <label for="check01">Padziļināta informācija <i class="arrow-down"></i></label>
-            <input id="check01" type="checkbox" name="menu" />
-            <ul class="submenu color-slategray">
+            <input id="check01" type="checkbox" name="menu" class="check01" />
+            <ul class="submenu submenu01 color-slategray">
                 <li>IDAQ skalas rezultāts: <span id="IDAQ-score"></span>/5</li>
                 <li>Godspeed skalas rezultāts: <span id="GS-score"></span>/5</li>
                 <li>Kopējais rezultāts: <span id="final-score"></span>/5</li>
             </ul>
-        </div>
-        <div class="bottom">
-            <p class="bold">Skalu avoti:</p>
-            <p><span class="bold">Godspeed:</span> Bartneck C., Kulic´ D., Croft E., Zoghbi S. Measurement instruments for the anthropomorphism, animacy, likeability, per- ceived intelligence, and perceived safety of robots// Int J Soc Robot – 2009. – 71.-81. lpp.</p>
-            <p><span class="bold">IDAQ:</span> Waytz A., Morewedge C. K., Epley N., Monteleone G., Gao J. H., Cacioppo J. T. Making sense by making sentient: effectance motivation increases anthropomorphism// J Person Soc Psychol – 2010. – 410.-435. lpp.</p>
+
+            <label for="check02">Skalu avoti <i class="arrow-down"></i></label>
+            <input id="check02" type="checkbox" name="menu" class="check02" />
+            <ul class="submenu submenu02 color-slategray">
+                <li><span>IDAQ:</span> Waytz A., Morewedge C. K., Epley N., Monteleone G., Gao J. H., Cacioppo J. T. Making sense by making sentient: effectance motivation increases anthropomorphism// J Person Soc Psychol – 2010. – 410.-435. lpp.</li>
+                <li><span>Godspeed:</span> Bartneck C., Kulic´ D., Croft E., Zoghbi S. Measurement instruments for the anthropomorphism, animacy, likeability, per- ceived intelligence, and perceived safety of robots// Int J Soc Robot – 2009. – 71.-81. lpp.</li>
+            </ul>
+
+            <label for="check03">Attēlu avoti <i class="arrow-down"></i></label>
+            <input id="check03" type="checkbox" name="menu" class="check03" />
+            <ul class="submenu submenu03 color-slategray">
+                <li>
+                    Dators: Photo by <a href="https://unsplash.com/@ba1kouras?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Balkouras Nicos</a> on
+                    <a href="https://unsplash.com/photos/turned-on-desktop-computer-set-with-black-and-gray-leather-gaming-chair-ncOQxZe8Krw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </li>
+                <li>
+                    Printeris: Photo by <a href="https://unsplash.com/@joonas1233?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joonas Sild</a> on
+                    <a href="https://unsplash.com/photos/a-printer-sitting-on-top-of-a-wooden-floor-next-to-a-potted-plant-QbOnQQebbjU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </li>
+                <li>
+                    Robots: Photo by <a href="https://unsplash.com/@owenbeard?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Owen Beard</a> on
+                    <a href="https://unsplash.com/photos/white-robot-toy-holding-black-tablet-K21Dn4OVxNw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </li>
+            </ul>
         </div>
 
         <script type="text/javascript" src="questions.js"></script>
